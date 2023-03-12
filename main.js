@@ -7,8 +7,9 @@ function validaform(numA, numB) {
     return numA.value < numB.value;
 }
 
-function formularioValido(formularioValor) {
-    return formularioValor == true
+function ocultaMensagemErro () {
+    document.querySelector('.error-message').style.display = 'none';
+    numB.style.border = '1px solid gray'
 }
 
 form.addEventListener('submit', function(e) {
@@ -30,3 +31,6 @@ form.addEventListener('submit', function(e) {
             document.querySelector('.error-message').style.display = 'block';
         }
     })
+
+    numA.addEventListener('input', ocultaMensagemErro);
+    numB.addEventListener('input', ocultaMensagemErro);
