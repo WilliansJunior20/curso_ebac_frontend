@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio html e js</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teste de validação</h1>
+        <form id="form">
+            <input id="numero-A" type="number" required placeholder="Digite o numero A">
+            <input id="numero-B" type="number" required placeholder="Digite o numero B">
+            <p class = 'error-message'>
+                Inválido! numero B com valor inferior ao numero A.
+            </p>
+            <button id="btn-enviar" type="submit">Enviar</button>
+        </form>
+        <p class = "sucsess-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
