@@ -21,6 +21,9 @@ form.addEventListener('submit', function(e) {
             const containerMensagemSucesso = document.querySelector('.sucsess-message');
             containerMensagemSucesso.innerHTML = mensagemSucesso;
             containerMensagemSucesso.style.display = 'block';
+
+            numA.value = '';
+            numB.value = '';
         }
         else {
             numB.style.border = '1px solid red';
