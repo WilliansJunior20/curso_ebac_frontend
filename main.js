@@ -4,7 +4,7 @@ const form = document.getElementById('form')
 
 
 function validaform(numA, numB) {
-    return numA.value < numB.value;
+    return numA < numB;
 }
 
 function ocultaMensagemErro () {
@@ -16,8 +16,10 @@ form.addEventListener('submit', function(e) {
     
         e.preventDefault();
         const mensagemSucesso = `Seu formulário é valido pois o número <b>${numA.value}</b> é menor que o número <b>${numB.value}</b>!`;
+        const valorNumA = parseFloat(numA.value);
+        const valorNumB = parseFloat(numB.value);
 
-        formValido = validaform(numA, numB) 
+        formValido = validaform(valorNumA, valorNumB) 
         if (formValido == true) {
             const containerMensagemSucesso = document.querySelector('.sucsess-message');
             containerMensagemSucesso.innerHTML = mensagemSucesso;
