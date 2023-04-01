@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+}
+
+h1, form {
+    margin-bottom: 12px;
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(3, 168, 3);
+}
+
+.container ul {
+text-align: left;
+}
+
+.container ul li {
+    cursor: pointer;
+}
+.container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.riscado {
+    text-decoration: line-through;
+} 
